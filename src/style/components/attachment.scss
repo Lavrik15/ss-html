@@ -1,0 +1,41 @@
+.attachment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.attachment__item {
+    width: calc(50% - 5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+.attachment__item-img {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    margin-right: 16px;
+    fill: inherit;
+}
+.attachment__item-name {
+    @include noWrapString;
+    margin-right: auto;
+}
+.attachment__btn {
+    position: relative;
+    display: flex;
+    border: none;
+    background: none;
+    color: $red;
+    padding: 2px;
+}
+.attachment__btn:hover {
+    cursor: pointer;
+}
+.attachment__btn-img {
+    margin-right: 6px;
+}

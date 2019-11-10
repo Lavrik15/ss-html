@@ -1,0 +1,27 @@
+.btn-icon {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    background: none;
+    border: none;
+}
+.btn-icon__text {
+    color: inherit;
+}
+.btn-icon:hover {
+    cursor: pointer;
+}
+.btn-icon__image {
+    margin-top: 4px;
+    margin-right: 6px;
+    width: 16px;
+    height: 14px;
+    flex-shrink: 0;
+}
+.btn-icon__image--red {
+    fill: $red;
+}
+.btn-icon__image--blue {
+    fill: $blue;
+}

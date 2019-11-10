@@ -1,0 +1,36 @@
+.status {
+    padding-bottom: 30px;
+}
+.status__row {
+    display: flex;
+    padding-top: 10px;
+}
+.status__row + .status__row {
+    padding-top: 10px;
+}
+.status__row--heading {
+    color: $grey;
+    border-bottom: 1px solid $grey;
+    padding-bottom: 10px;
+    padding-top: 0;
+}
+.status__date {
+    flex-basis: 15%;
+    white-space: nowrap;
+    min-width: 90px;
+}
+.status__subject {
+    flex-basis: 70%;
+    @include noWrapString;
+}
+.status__info {
+    color: $grey;
+    flex-basis: 15%;
+    text-align: right;
+}
+.status__info--success {
+    color: $green;
+}
+.status__info--error {
+    color: $red;
+}
